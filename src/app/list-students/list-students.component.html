@@ -1,0 +1,31 @@
+<div class = "pt-3 pb-2 mb-3 border-bottom" >
+<h1 class = "h2" [translate]="'Button_nav.allStudent'"> </h1 >
+</div>
+<table class = "table table-striped table-bordered" >
+<thead >
+<tr >
+<th scope = "col" [translate]=" 'InfoPerso.Nom' "> </th >
+<th scope = "col" [translate]="'InfoPerso.Prénom'"></th >
+<th scope = "col" [translate]="'InfoPerso.Email'"></th >
+<th scope = "col" [translate]="'InfoPerso.pwd'"> </th >
+<th scope = "col" [translate]="'InfoPerso.Age'"></th >
+<th scope = "col" [translate]="'InfoPerso.tel'"></th >
+<th scope = "col" [translate]="'InfoPerso.Action'"></th >
+</tr >
+</thead >
+<tbody >
+<tr *ngFor="let student of students ">
+<td >{{student.firstName}} </td >
+<td >{{student.lastName}} </td >
+<td >{{student.email}} </td >
+<td >{{student.password}} </td >
+<td >{{student.age}}</td >
+<td >{{student.phone}} </td >
+<td >
+<button type = "button" class = "btn btn-danger" (click)="delete(student.id,student.firstName)" [translate]="'Button_Act.del'" > </button>
+<button type = "button" class = "btn btn-primary" [routerLink] = "'/addstudent'"[queryParams]="{id:student.id}"[translate]="'Button_Act.edit'"></button>
+</td >
+</tr >
+
+</tbody >
+</table >

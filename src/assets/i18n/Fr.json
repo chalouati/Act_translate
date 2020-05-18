@@ -1,0 +1,74 @@
+{
+"Button_nav":
+    {
+        "face_button":"Paramétre",
+
+        "login":"Connecter",
+        
+        "addStudent": "Ajout Etudiant",
+
+        "allStudent":"Liste Etudiant",
+
+        "logout":"Deconnexion"
+    },
+
+    
+    "Button_Act":
+
+    {"del":"Supprimer",
+
+    "edit":"Editer"
+    
+    },
+
+    "InfoPerso":{
+
+        "Nom":"Nom",
+        "Prénom":"Prénom",
+        "Email":"Mail",
+        "pwd":"Mot de passe",
+        "Age":"Age",
+        "tel":"Tel",
+        "Action":"Action"
+
+    },
+
+    "Button_down":{
+        "canc":"Fermer",
+        "add":"Ajouter Etudiant",
+        "login":"Connecter",
+        "inscri":"Créer un compte ",
+        "forgpwd":"Mot de passe oublier",
+        "creCompt":"Créer"
+    },
+
+    "EspaceLog":{
+        "Titre1":"Authentification ",
+        "Titre2":"Inscription "
+
+    },
+    
+
+   "ToastMassega":{
+
+           "del":"Vous êtes sûre de bien vouloir",
+           "delconf":"Supprimer l'utilsateur:{{nom}}",
+           "succ":"succée!",
+           "oper1": "Mise à joir avec:",
+           "confDelete":"Oui,supprimer!",
+           "close":"fermer",
+           "Inscr": "Inscription avec: ",
+           "Auth": "Authentification avec: "
+
+   },
+
+     "VerfChamp":{"champName":"le champs Nom est obligatoire" ,
+                "champMail":"Le champs Mail est obligatoire "  ,
+                "champPwd":"vérifier la longeur de mots de passe"
+
+              }
+    
+
+
+    
+}

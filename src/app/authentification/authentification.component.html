@@ -1,0 +1,48 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+   <div class="container">
+      <div class="col-md-6 mx-auto text-center">
+         <div class="header-title">
+            <h1 class="wv-heading--title">
+               {{'EspaceLog.Titre1'|translate}}
+            </h1>
+            
+         </div>
+      </div>
+     
+         <div class="col-md-4 mx-auto">
+            <div class="myform form ">
+               <form action="" method="post" name="login">
+                  <div class="form-group">
+                     <input type="password" name="password"  class="form-control my-input" id="password" placeholder="{{'InfoPerso.pwd'|translate}}" [(ngModel)]=user.password>
+                  </div>
+                  <div class="form-group">
+                     <input type="email" name="email"  class="form-control my-input" id="email" placeholder="{{'InfoPerso.Email'|translate}}" [(ngModel)]=user.email>
+                  </div>
+                  
+                  
+                  <div class="text-center ">
+                    <button type="submit" class=" btn btn-block send-button tx-tfm" (click)="authentifier()"> {{'Button_down.login'|translate}}</button><br>
+                 </div>
+                                                                                                             
+                  
+                  <div class="text-center ">
+                     <button type="submit" class=" btn btn-block send-button tx-tfm" routerLink="../inscription">{{'Button_down.inscri'|translate}}</button>
+                  </div>
+
+                  <div class="form-group">
+
+                    <a class="ForgetPwd" value="Login" routerLink="../Resetpwd">{{'Button_down.forgpwd'|translate}} ?</a>
+                </div>
+
+               </form>
+            </div>
+         </div>
+      
+   </div>
+</body>

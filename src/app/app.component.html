@@ -1,0 +1,22 @@
+<div class = "row">
+  
+    <div class="col-sm-2" id="col1">
+        <app-navigation (msgaddStudent)="identifpage($event)"></app-navigation>
+    </div>
+    
+        <div class="col-sm-8">    
+          <router-outlet ></router-outlet> 
+        </div >
+        <div class="col-sm-2">
+          <span class="custom-dropdown custom-dropdown--white"></span>
+          <select id="LANG" class="custom-dropdown__select custom-dropdown__select--white">
+            <option value="en" (click)="switchLang('En')">   En</option>
+            <option value="fr"(click)="switchLang('Fr')"> Fr</option>
+          </select>
+  
+        </div >
+        <span> {{pageRecu}} </span>
+    </div >
+  
+
+

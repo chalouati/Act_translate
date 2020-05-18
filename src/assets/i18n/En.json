@@ -1,0 +1,69 @@
+{
+    "Button_nav":
+        {"face_button":"Setting",
+        "login":"Login",
+        "addStudent": "Add Student",    
+        "allStudent":"Edit Student",
+        "logout":"Logout"
+    },
+
+    
+    "Button_Act":
+
+    {  "del":"Delete",
+       "edit":"Edit"
+    },
+
+    "InfoPerso":{
+
+        "Nom":"First Name",
+        "Prénom":"Last Name",
+        "Email":"Email",
+        "pwd":"Password",
+        "Age":"Age",
+        "tel":"Phone",
+        "Action":"Action"
+
+    },
+
+    "Button_down":{
+        "canc":"Cancel",
+        "add":"Add Student",
+        "login":"Login",
+        "inscri":"Create Your Account",
+        "forgpwd":"Forget Password",
+        "creCompt":"Create"
+    },
+
+    "EspaceLog":{
+        "Titre1":"Login Page",
+        "Titre2":"Register page"
+
+    },
+
+   "ToastMassega":{
+
+
+           "del":"are you sure ",
+           "delconf":"you want to delete :{{nom}}",
+           "succ":"successful!",
+           "oper1": "It's Update",
+           "confDelete":"Yes,delete!",
+           "close":"Close",
+           "Inscr": "Registred with : ",
+           "Auth": "Authentification  "
+             },
+            
+     "VerfChamp":{ 
+            "champName":"Name field is required" ,
+            "champMail":"Mail field is required "  ,
+            "champPwd":"check your password"
+
+              }
+    
+
+
+}
+
+   
+    

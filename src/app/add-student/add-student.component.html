@@ -1,0 +1,57 @@
+<div class = "pt-3 pb-2 mb-3 border-bottom" >
+    <h1 class = "h2" [translate]="'Button_nav.addStudent'"> </h1>
+    </div >
+    
+    <form #addForm="ngForm" (ngSubmit)="save()">
+    
+    <div class = "row" >
+    <div class = "col-lg-5 col-md-12 col-sm-12" >
+    <div class = "row" >
+    <div class = "col-md-12 mb-3" >
+
+    <label > {{'InfoPerso.Prénom'|translate}} </label >
+        <input type = "text" name = "firstName" class = "form-control"[(ngModel)] ="student.firstName" required
+             #firstNameValidator="ngModel">
+
+            <div *ngIf="(firstNameValidator.invalid && firstNameValidator.touched)
+                 ||(firstNameValidator.invalid && addForm.submitted)" class="alert alert-danger">
+                <div *ngIf="firstNameValidator.errors.required" [translate]="'VerfChamp.champName'"> </div> 
+            </div >
+        </div>
+
+
+    <div class = "col-md-12 mb-3" >
+    <label > {{'InfoPerso.Nom'|translate}}</label >
+    <input type = "text" name = "lastName" class = "form-control" [(ngModel)] ="student.lastName">
+    </div >
+
+
+    <div class = "col-md-12 mb-3" >
+    <label >{{'InfoPerso.Age'|translate}}</label >
+    <input type = "text" name = "Age" class = "form-control" [(ngModel)] ="student.age">
+    </div >
+    </div >
+    <div class = "row" >
+    <div class = "col-md-12 mb-3" >
+    <label > {{'InfoPerso.Email'|translate}}</label >
+    <input type = "email" name = "mail" class ="form-control" [(ngModel)] ="student.email" required #refMail="ngModel">
+        <div *ngIf="refMail.invalid && addForm.submitted" class="alert alert-danger"[translate]="'VerfChamp.champMail'"> </div>
+    </div >
+    <div class = "col-md-12 mb-3" >
+    <label >{{'InfoPerso.pwd'|translate}} </label >
+    <input type = "password" name = "pwd" class ="form-control" [(ngModel)] ="student.password" minlength="6" required  #rePassword="ngModel">
+    <div *ngIf="rePassword.invalid && addForm.submitted " class="alert alert-danger"> {{'VerfChamp.champPwd'|translate}}</div>
+    </div >
+    <div class = "col-md-12 mb-3" >
+    <label > {{'InfoPerso.tel'|translate}}</label >
+    <input type = "text" name = "phone" class = "form-control" [(ngModel)] ="student.phone">
+    </div >
+    </div >
+
+    <div class = "form-group text-right" >
+    <button type = "button" class = "btn btn-secondary" routerLink ="all-students" (click)=retour()> {{'Button_down.canc'|translate}}</button >
+    <button type = "submit" class = "btn btn-success" [translate]="'Button_down.add'"></button >
+    </div >
+    </div >
+    </div >
+    </form >
